@@ -1,8 +1,8 @@
 import React from 'react'
 import OpenSeadragon from 'openseadragon'
-import './Dragon.css';
+import './Dragon.css'
 
-// helper function to load image using promises
+
 const loadImage = (src) => new Promise(function(resolve, reject) {
     var img = document.createElement('img')
     img.addEventListener('load', function(){  resolve(img) })
