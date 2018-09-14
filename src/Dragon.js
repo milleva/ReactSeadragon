@@ -26,10 +26,10 @@ class Dragon extends React.Component {
                 </div>
                 <div className="openseadragon" id={id}></div>
                 <ul className="ocd-toolbar">
-                    <li><a id="zoom-in"><i className="fa fa-plus"></i></a></li>
-                    <li><a id="reset"><i className="fa fa-circle"></i></a></li>
-                    <li><a id="zoom-out"><i className="fa fa-minus"></i></a></li>
-                    <li><a id="full-page"><i className="fa fa-cog"></i></a></li>
+                    <li><a id="zoom-in">+<i className="fa fa-plus"></i></a></li>
+                    <li><a id="home">&#8962;<i className="fa fa-circle"></i></a></li>
+                    <li><a id="zoom-out">-<i className="fa fa-minus"></i></a></li>
+                    <li><a id="full-page">[  ]<i className="fa fa-cog"></i></a></li>
                 </ul>
             </div>
         )
@@ -43,12 +43,12 @@ class Dragon extends React.Component {
                 id: id,
                 visibilityRatio: 1.0,
                 constrainDuringPan: false,
-                defaultZoomLevel: 1,
+                defaultZoomLevel: 2,
                 minZoomLevel: 1,
                 maxZoomLevel: 10,
                 zoomInButton: 'zoom-in',
                 zoomOutButton: 'zoom-out',
-                homeButton: 'reset',
+                homeButton: 'home',
                 fullPageButton: 'full-page',
                 nextButton: 'next',
                 previousButton: 'previous',
